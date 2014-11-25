@@ -46,18 +46,22 @@ table {
 
 /*Ignore the gross stuff above */
 body {
-  background-color: blue;
-  margin: 0 500px; }
+  background-color: blue; }
   body .mustdo {
-    width: 500px; }
+    width: 80%;
+    margin: 0 auto; }
     body .mustdo input {
       margin: 20px;
-      font-size: 40px;
       color: white;
-      font-family: helvetica, sans-serif; }
+      font-family: helvetica, sans-serif;
+      font-size: 3em * 1.61803; }
     body .mustdo h1 {
-      margin: 0 auto;
       font-style: italic;
-      font-family: "nouvelle-vague", sans-serif; }
+      font-family: "nouvelle-vague", sans-serif;
+      font-size: 3em; }
+  body .design, body .htmlcode, body .sass, body .git, body .responsiveness {
+    float: left;
+    width: 40%;
+    margin: 20px 5%; }
 
 /*# sourceMappingURL=style.css.map */

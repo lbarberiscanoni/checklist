@@ -2,29 +2,43 @@
 
 $nouvelle: "nouvelle-vague", sans-serif;
 
+$principal-size: 3em;
+
+$golden-mean: 1.61803398875;
+
 @mixin curvystyle {
     font-style: italic;
     font-family: $nouvelle;
 }
 
 @mixin commontype {
-    font-size: 40px;
     color: white;
     font-family: helvetica, sans-serif;
 }
 
 body {
     background-color: blue;
-    margin: 0 500px;
+
     .mustdo {
-        width: 500px;
+        width: 80%;
+        margin: 0 auto;
+
         input {
             margin: 20px;
             @include commontype;
+            font-size: #{$principal-size} * #{$golden-mean};
         }
+
         h1 {
-            margin: 0 auto;
             @include curvystyle;
+            font-size: $principal-size;
         }
+    }
+
+    .design, .htmlcode, .sass, .git, .responsiveness {
+        float: left;
+        // border: 1px solid black;
+        width: 40%;
+        margin: 20px 5%;
     }
 }
