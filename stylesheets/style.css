@@ -50,18 +50,18 @@ body {
   body .mustdo {
     width: 80%;
     margin: 0 auto; }
-    body .mustdo input {
-      margin: 20px;
-      color: white;
-      font-family: helvetica, sans-serif;
-      font-size: 3em * 1.61803; }
-    body .mustdo h1 {
-      font-style: italic;
-      font-family: "nouvelle-vague", sans-serif;
-      font-size: 3em; }
-  body .design, body .htmlcode, body .sass, body .git, body .responsiveness {
-    float: left;
-    width: 40%;
-    margin: 20px 5%; }
+    body .mustdo .design, body .mustdo .htmlcode, body .mustdo .sass, body .mustdo .git, body .mustdo .responsiveness {
+      float: left;
+      width: 40%;
+      margin: 20px 5%; }
+      body .mustdo .design h1, body .mustdo .htmlcode h1, body .mustdo .sass h1, body .mustdo .git h1, body .mustdo .responsiveness h1 {
+        font-style: italic;
+        font-family: "nouvelle-vague", sans-serif;
+        font-size: 2.5em; }
+      body .mustdo .design li, body .mustdo .htmlcode li, body .mustdo .sass li, body .mustdo .git li, body .mustdo .responsiveness li {
+        color: #F2F2F0;
+        font-family: helvetica, sans-serif;
+        font-size: 2.5em * 1.61803;
+        margin: 30px 0 30px 30px; }
 
 /*# sourceMappingURL=style.css.map */

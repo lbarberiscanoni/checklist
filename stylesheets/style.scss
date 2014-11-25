@@ -2,7 +2,7 @@
 
 $nouvelle: "nouvelle-vague", sans-serif;
 
-$principal-size: 3em;
+$principal-size: 2.5em;
 
 $golden-mean: 1.61803398875;
 
@@ -12,7 +12,7 @@ $golden-mean: 1.61803398875;
 }
 
 @mixin commontype {
-    color: white;
+    color: #F2F2F0;
     font-family: helvetica, sans-serif;
 }
 
@@ -23,22 +23,21 @@ body {
         width: 80%;
         margin: 0 auto;
 
-        input {
-            margin: 20px;
-            @include commontype;
-            font-size: #{$principal-size} * #{$golden-mean};
-        }
-
-        h1 {
-            @include curvystyle;
-            font-size: $principal-size;
-        }
-    }
-
-    .design, .htmlcode, .sass, .git, .responsiveness {
+        .design, .htmlcode, .sass, .git, .responsiveness {
         float: left;
-        // border: 1px solid black;
         width: 40%;
         margin: 20px 5%;
+
+            h1 {
+                @include curvystyle;
+                font-size: $principal-size;
+            }
+
+            li {
+                @include commontype;
+                font-size: #{$principal-size} * #{$golden-mean};
+                margin: 30px 0 30px 30px;
+            }
+        }
     }
 }
