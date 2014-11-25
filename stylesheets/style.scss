@@ -1,0 +1,30 @@
+@import "reset";
+
+$nouvelle: "nouvelle-vague", sans-serif;
+
+@mixin curvystyle {
+    font-style: italic;
+    font-family: $nouvelle;
+}
+
+@mixin commontype {
+    font-size: 40px;
+    color: white;
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    background-color: blue;
+    margin: 0 500px;
+    .mustdo {
+        width: 500px;
+        input {
+            margin: 20px;
+            @include commontype;
+        }
+        h1 {
+            margin: 0 auto;
+            @include curvystyle;
+        }
+    }
+}
