@@ -47,6 +47,13 @@ table {
 /*Ignore the gross stuff above */
 body {
   background-color: blue; }
+  body #canvas {
+    width: 100%;
+    z-index: -2; }
+  body .typed-sentence {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap; }
   body .mustdo {
     width: 80%;
     margin: 0 auto; }
@@ -66,5 +73,7 @@ body {
         body .mustdo .design li input, body .mustdo .htmlcode li input, body .mustdo .sass li input, body .mustdo .git li input, body .mustdo .responsiveness li input {
           width: 50px;
           border: 1px solid black; }
+      body .mustdo .design a, body .mustdo .htmlcode a, body .mustdo .sass a, body .mustdo .git a, body .mustdo .responsiveness a {
+        color: red; }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,6 +19,17 @@ $golden-mean: 1.61803398875;
 body {
     background-color: blue;
 
+    #canvas {
+        width: 100%;
+        z-index: -2;
+    }
+
+    .typed-sentence {
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
     .mustdo {
         width: 80%;
         margin: 0 auto;
@@ -42,6 +53,10 @@ body {
                     width: 50px;
                     border: 1px solid black;
                 }
+            }
+
+            a {
+                color: red;
             }
         }
     }
