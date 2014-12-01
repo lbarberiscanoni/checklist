@@ -2,17 +2,35 @@
 <html>
   <head>
     <title>Lorenzo's checklist</title>
-    <link href="stylesheets/reset.css" type="text/css" rel="stylesheet">
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="scripts/jquery.avgrund.js-master/style/avgrund.css">
     <meta charset="UTF-8">
     <script src="//use.typekit.net/qwi0ebn.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
+<!--     <input type="radio" name="rerun" id="rerun2" checked="checked"/>
+    <div class="logo">
+      <span>c</span>
+      <span>h</span>
+      <span>e</span>
+      <span>c</span>
+      <span>k</span>
+      <span>l</span>
+      <span>i</span>
+      <span>s</span>
+      <span>t</span>
+    </div> -->
+    <div class="vertical-wrapper">
+      <div class="middle">
+        <h1>Checklist</h1>
+      </div>
+    </div>
     <canvas id="canvas"></canvas>
     <div class="mustdo">
       <div class="design">
-        <h1>Design</h1>
+        <h2>Design</h2>
         <ul class="typed-sentence">
           <li>
             <input type="checkbox"/>Body Copy is NOT centered
@@ -29,7 +47,7 @@
         </ul>
       </div>
       <div class="sass">
-        <h1>Sass</h1>
+        <h2>Sass</h2>
         <ul class="typed-sentence">
           <li>
             <input type="checkbox"/>“burbon install” in stylesheet folder EVERY TIME
@@ -49,7 +67,7 @@
         </ul>
       </div>
       <div class="htmlcode">
-        <h1>HTML and CSS</h1>
+        <h2>HTML and CSS</h2>
         <ul>
           <li>
             <input type="checkbox"/>Container div 
@@ -86,7 +104,7 @@
           </li>
       </div>
       <div class="git">
-        <h1>Git</h1>
+        <h2>Git</h2>
         <ul>
           <li>
             <input type="checkbox" />ADD ⇒ COMMIT ⇒ PUSH
@@ -100,7 +118,7 @@
         </ul>
       </div>
       <div class="responsiveness">
-        <h1>Responsiveness</h1>
+        <h2>Responsiveness</h2>
         <ul>
           <li>
             <input type="checkbox" />Always do mobile first
@@ -114,7 +132,9 @@
         </ul>
       </div>
     </div>
-    <script src="scripts/typewriter_design.js"></script>
     <script src="scripts/typewriter_sass.js"></script>
     <script src="scripts/clouds.js"></script>
+    <script>$(document).ready(function() {
+      $('element').avgrund();
+    }</script>
   </body>
