@@ -45,50 +45,6 @@ table {
   border-spacing: 0; }
 
 /*Ignore the gross stuff above */
-@keyframes fadeIn {
-  0% {
-    transform: rotateZ(20deg);
-    opacity: 0; }
-  50% {
-    transform: rotateZ(20deg);
-    top: 50px;
-    opacity: 0;
-    letter-spacing: 10px; }
-  100% {
-    transform: rotateZ(0deg);
-    top: 0px;
-    opacity: 1;
-    letter-spacing: 0px; } }
-h1 {
-  position: relative;
-  font-weight: 900;
-  font-size: 8em;
-  color: #effaf1;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5), 1px 1px #20642d, 2px 2px #20642d, 3px 3px #20642d, 4px 4px #20642d, 5px 5px #20642d, 6px 6px #20642d, 6px 6px 15px #000;
-  text-align: center;
-  animation: fadeIn 2s;
-  transition: text-shadow .2s;
-  cursor: pointer; }
-  h1:hover {
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5), 2px 2px #20642d, 4px 4px #20642d, 6px 6px #20642d, 8px 8px #20642d, 10px 10px #20642d, 12px 12px #20642d, 6px 6px 15px #000; }
-  h1:active {
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5), 0px 0px #20642d, 0px 0px #20642d, 0px 0px #20642d, 0px 0px #20642d, 0px 0px #20642d, 0px 0px #20642d, 6px 6px 15px #000; }
-
-.vertical-wrapper {
-  height: 100%;
-  width: 100%;
-  display: table; }
-
-.middle {
-  width: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  overflow: hidden; }
-  .middle *:first-child {
-    margin-top: 0; }
-  .middle *:last-child {
-    margin-bottom: 15px; }
-
 body {
   background: blue; }
   body #canvas {
@@ -128,4 +84,4 @@ body {
       body .mustdo .design a, body .mustdo .htmlcode a, body .mustdo .sass a, body .mustdo .git a, body .mustdo .responsiveness a, body .mustdo .javascript a {
         color: red; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
