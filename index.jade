@@ -4,12 +4,14 @@ html
 		title Lorenzo's Checklist
 		link(href="stylesheets/main.css", type="text/css", rel="stylesheet")
 		meta(charset="UTF-8")
+		script(type="text/javascript", src="http://code.jquery.com/jquery-1.9.0.js")
+		script(type="text/javascript", src="scripts/dropDown.js")
 	body
 		h1 Checklist
 		.mustdo
-			.design
-				h2 Design
-				ul
+			.topic
+				button.show Design
+				ul.dropDown
 					li 
 						input(type="checkbox")
 						Body Copy is NOT centered
@@ -22,9 +24,9 @@ html
 					li
 						input(type="checkbox")
 						Images NEVER pixelated
-			.sass
-				h2 Sass
-				ul
+			.topic
+				button.show Sass
+				ul.dropDown
 					li 
 						input(type="checkbox")
 						&ldquo;burbon install&rdquo; in stylesheet folder EVERY TIME
@@ -36,13 +38,13 @@ html
 						Run &ldquo;sass &ndash;watch stylesheet/styles.scss&rdquo;
 					li
 						input(type="checkbox")
-						Inception Rule: after 4 levels the dream collapses
+						Inception Rul.dropDowne: after 4 levels the dream collapses
 					li
 						input(type="checkbox")
 						Run Sass Beautify to take care of spaces
-			.htmlcode
-				h2 HTML and CSS
-				ul
+			.topic
+				button.show HTML and CSS
+				ul.dropDown
 					li 
 						input(type="checkbox")
 						Use a container div
@@ -76,21 +78,21 @@ html
 					li
 						input(type="checkbox")
 						Run HTML Beautify to take care of spaces
-			.git
-				h2 Git
-				ul
+			.topic
+				button.show Git
+				ul.dropDown
 					li 
 						input(type="checkbox")
 						ADD &rArr; COMMIT &rArr; PUSH
 					li 
 						input(type="checkbox")
-						checkout gh-pages &rArr; pull origin master &rArr; push
+						checkout gh-pages &rArr; pul.dropDownl origin master &rArr; push
 					li 
 						input(type="checkbox")
 						&ldquo;python &ndash;m SimpleHTTPServer&rdquo; makes a local server to see changes in real time
-			.responsiveness
-				h2 Responsiveness
-				ul
+			.topic
+				button.show Responsiveness
+				ul.dropDown
 					li 
 						input(type="checkbox")
 						Always do mobile first
@@ -100,9 +102,9 @@ html
 					li 
 						input(type="checkbox")
 						Save a(href='http://sixrevisions.com/web_design/comprehensive-guide-saving-images-for-web/', target='blank') images well
-			.javascript
-				h2 JavaScript and JQuery
-				ul
+			.topic
+				button.show JavaScript and JQuery
+				ul.dropDown
 					li 
 						input(type="checkbox")
 						Avoid creating global variables

@@ -1,78 +1,42 @@
 @import "reset";
 
-$nouvelle: "nouvelle-vague", sans-serif;
-
 $principal-size: 2.5em;
 
 $golden-mean: 1.61803398875;
 
-@mixin curvystyle {
-    font-style: italic;
-    font-family: $nouvelle;
-}
-
-@mixin commontype {
-    color: #F2F2F0;
-    font-family: helvetica, sans-serif;
-}
-
 body {
     background: blue;
-
-    #canvas {
-        width: 100%;
-    }
-
-    .typed-sentence {
-        width: 0;
-        overflow: hidden;
-        white-space: nowrap;
-    }
 
     .mustdo {
         width: 80%;
         margin: 0 auto;
 
-        #canvas {
-            width: 100%;
-        }
+      	.topic { 
+        	float: left;
+        	width: 40%;
+        	margin: 20px 5%;
+            box-shadow: 5px 5px 4px #999,0 70px 60px -40px #444,0 11px 20px -10px #444;
 
-        .design, .htmlcode, .sass, .git, .responsiveness, .javascript {
-        float: left;
-        width: 40%;
-        margin: 20px 5%;
+    		ul.dropDown {
+			display: none;
 
-            h2 {
-                @include curvystyle;
-                font-size: $principal-size;
-                animation-duration: 7000ms;
-            }
+        		li {
+            		font-size: #{$principal-size} * $golden-mean;
+                    color: white;
+            		margin: 30px 0 30px 30px;
+            		letter-spacing: .05em;
+            		transition: letter-spacing 500ms ease-in;
 
-            h2:hover {
-                transform: rotate(20deg);
-
-            }
-
-            li {
-                @include commontype;
-                font-size: #{$principal-size} * $golden-mean;
-                margin: 30px 0 30px 30px;
-                letter-spacing: .05em;
-                transition: letter-spacing 500ms ease-in;
-
-                input {
-                    width: 50px;
-                    border: 1px solid black;
+            		input {
+                		width: 50px;
+                		border: 1px solid black;
+            		}
                 }
-            }
-
-            li:hover {
-                letter-spacing: .18em;
-            }
-
-            a {
-                color: red;
-            }
+                
+        		li:hover {
+            			letter-spacing: .18em;
+        		}		
+            }	
         }
     }
 }
