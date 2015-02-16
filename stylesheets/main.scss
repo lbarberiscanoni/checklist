@@ -15,27 +15,27 @@ body {
         	float: left;
         	width: 40%;
         	margin: 20px 5%;
-            box-shadow: 5px 5px 4px #999,0 70px 60px -40px #444,0 11px 20px -10px #444;
+            	box-shadow: 5px 5px 4px #999,0 70px 60px -40px #444,0 11px 20px -10px #444;
 
     		ul.dropDown {
 
         		li {
-            		font-size: #{$principal-size} * $golden-mean;
-                    color: white;
-            		margin: 30px 0 30px 30px;
-            		letter-spacing: .05em;
-            		transition: letter-spacing 500ms ease-in;
+            			font-size: #{$principal-size} * $golden-mean;
+                    		color: white;
+            			margin: 30px 0 30px 30px;
+            			letter-spacing: .05em;
+            			transition: letter-spacing 500ms ease-in;
 
-            		input {
-                		width: 50px;
-                		border: 1px solid black;
-            		}
-                }
+            			input {
+                			width: 50px;
+                			border: 1px solid black;
+            			}		
+                	}
                 
         		li:hover {
             			letter-spacing: .18em;
         		}		
-            }	
+            	}	
         }
     }
 }
